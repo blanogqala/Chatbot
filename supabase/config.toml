@@ -1,1 +1,5 @@
 project_id = "qpssxxkbpfrzcsddgxah"
+
+[functions.chat]
+# Public visitor chat; signed-in tokens are validated inside the function.
+verify_jwt = false

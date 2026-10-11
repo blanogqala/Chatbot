@@ -27,11 +27,11 @@ const Hero = () => {
         </p>
         
         <div className="flex items-center justify-center gap-4 pt-4 fade-in">
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+          <Button onClick={() => window.dispatchEvent(new CustomEvent("open-capaciti-chat"))} size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
             Start Chatting
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
-          <Button size="lg" variant="ghost" className="hover:bg-muted">
+          <Button onClick={() => window.dispatchEvent(new CustomEvent("open-capaciti-chat", { detail: "What is CAPACITI?" }))} size="lg" variant="ghost" className="hover:bg-muted">
             Learn More
           </Button>
         </div>
